@@ -6,6 +6,10 @@ import "../styles/home.css";
 const phone = "863-210-5647";
 const address = "4760 S. FL Ave, Lakeland FL 33813";
 const email = "lakeland@barksuds.com";
+const dogImage1 =
+  "https://petlandpembrokepines.com/wp-content/uploads/2019/09/Petland_Florida_Cavalier_King_Charles_Spaniel_puppy.jpg";
+const dogImage2 =
+  "https://a-z-animals.com/media/2021/12/Prettiest-_-Cutest-Dogs-header.jpg";
 
 export default function HomePage() {
   return (
@@ -45,7 +49,28 @@ export default function HomePage() {
             </div>
 
             <div className="hero__card" role="region" aria-label="Quick info">
-              <div className="heroCard">
+              <div className="heroMedia" aria-label="Dog photos">
+                <div className="heroMedia__imgWrap heroMedia__imgWrap--tall">
+                  <img
+                    className="heroMedia__img"
+                    src={dogImage1}
+                    alt="Cavalier King Charles Spaniel puppy looking up"
+                    decoding="async"
+                    fetchPriority="high"
+                  />
+                </div>
+                <div className="heroMedia__imgWrap heroMedia__imgWrap--wide">
+                  <img
+                    className="heroMedia__img"
+                    src={dogImage2}
+                    alt="Cute small white dog running toward the camera"
+                    decoding="async"
+                    fetchPriority="high"
+                  />
+                </div>
+              </div>
+
+              <div className="heroCard heroCard--belowMedia">
                 <div className="heroCard__row">
                   <div className="heroCard__k">Location</div>
                   <div className="heroCard__v">{address}</div>
