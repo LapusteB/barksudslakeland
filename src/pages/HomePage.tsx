@@ -97,7 +97,7 @@ export default function HomePage() {
                 </div>
                 <div className="heroCard__note">
                   Text &amp; Voice AI programs available (opt-in). View{" "}
-                  <Link to="/a2p">A2P Terms</Link>.
+                  <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>.
                 </div>
               </div>
             </div>
@@ -322,7 +322,9 @@ export default function HomePage() {
             </div>
 
             <div className="legalLine">
-              <Link to="/a2p">A2P Terms (SMS &amp; Voice AI)</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+              <span className="dot">•</span>
+              <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
               <span className="dot">•</span>
               <a href="#top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 Back to top

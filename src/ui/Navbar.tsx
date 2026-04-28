@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export default function Navbar() {
@@ -20,9 +20,6 @@ export default function Navbar() {
           <a className="nav__book" href="/#book">
             Book appointment
           </a>
-          <NavLink className="nav__a2p" to="/a2p">
-            A2P
-          </NavLink>
         </nav>
       </div>
     </header>

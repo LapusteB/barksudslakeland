@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/pages/a2ptermspage.tsx","./src/pages/homepage.tsx","./src/ui/footer.tsx","./src/ui/navbar.tsx"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/pages/a2ptermspage.tsx","./src/pages/homepage.tsx","./src/pages/privacypolicypage.tsx","./src/pages/termsandconditionspage.tsx","./src/ui/footer.tsx","./src/ui/navbar.tsx"],"version":"5.9.3"}

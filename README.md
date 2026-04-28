@@ -1,6 +1,6 @@
 # BarkSuds Lakeland Landing
 
-React (Vite) landing page for BarkSuds Lakeland with an **A2P Terms** page at `/a2p`.
+React (Vite) landing page for BarkSuds Lakeland.
 
 ## Run locally
 
@@ -12,5 +12,7 @@ npm run dev
 ## Routes
 
 - `/` Landing page
-- `/a2p` A2P messaging terms (SMS & Voice AI)
+- `/privacy-policy` Privacy Policy (public)
+- `/terms-and-conditions` Terms & Conditions (public)
+- `/a2p` Legacy A2P messaging terms (not used for compliance submission)
 

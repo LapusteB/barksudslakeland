@@ -23,10 +23,8 @@ export default function Footer() {
           </div>
           <div className="footer__col">
             <div className="footer__h">Legal</div>
-            <Link to="/a2p">A2P Terms (SMS &amp; Voice AI)</Link>
-            <a href="#" aria-disabled="true">
-              Privacy Policy
-            </a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
           </div>
         </div>
 
