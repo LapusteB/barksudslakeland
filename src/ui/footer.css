@@ -1,5 +1,5 @@
 .footer {
-  background: var(--text);
+  background: #1C1C2E;
   color: rgba(255, 255, 255, 0.80);
 }
 .footer__inner {
@@ -22,26 +22,28 @@
   width: 42px;
   height: 42px;
   border-radius: 11px;
-  background: var(--amber);
+  background: var(--pink);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 16px rgba(196, 122, 44, 0.30);
+  box-shadow: 0 4px 18px rgba(238, 71, 155, 0.35);
 }
 .footer__name {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
   color: #fff;
   font-family: var(--f-display);
   margin-bottom: 5px;
   line-height: 1;
+  letter-spacing: -0.01em;
 }
 .footer__tagline {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.42);
   line-height: 1.4;
+  font-weight: 500;
 }
 
 /* Columns */
@@ -56,38 +58,39 @@
   gap: 10px;
 }
 .footer__colHead {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.13em;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.36);
   margin-bottom: 4px;
   font-family: var(--f-body);
 }
 .footer__col a {
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
   transition: color 130ms ease;
   width: fit-content;
 }
 .footer__col a:hover {
-  color: #fff;
+  color: var(--pink);
   text-decoration: none;
 }
 .footer__col p {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
   margin: 0;
   line-height: 1.6;
+  font-weight: 500;
 }
 .footer__addr { line-height: 1.55 !important; }
 
 /* Divider */
 .footer__hr {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin: 0;
 }
 
@@ -100,13 +103,15 @@
   gap: 16px;
 }
 .footer__copy {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.36);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.34);
+  font-weight: 500;
 }
 .footer__sig {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.26);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.24);
   font-style: italic;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

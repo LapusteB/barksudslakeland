@@ -4,7 +4,12 @@
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Brian Lapuste\\\\Documents\\\\source\\\\barksudslakeland\" -Recurse -Force)",
       "Bash(Select-Object FullName, PSIsContainer)",
       "Bash(Sort-Object FullName)",
-      "Bash(Format-Table -AutoSize)"
+      "Bash(Format-Table -AutoSize)",
+      "WebFetch(domain:lakeland.barksuds.com)",
+      "WebFetch(domain:barksuds.com)",
+      "WebSearch",
+      "WebFetch(domain:barksudsfranchise.com)",
+      "Bash(not exist *)"
     ]
   }
 }

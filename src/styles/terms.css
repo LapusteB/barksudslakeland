@@ -1,5 +1,5 @@
 /* ============================================================
-   Terms / Privacy pages — styling only, content is A2P-approved
+   Terms / Privacy pages — styling only, A2P-approved content unchanged
    ============================================================ */
 .terms {
   padding: 56px 0 80px;
@@ -11,30 +11,33 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--amber);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--pink);
   margin-bottom: 20px;
   padding: 0;
   text-decoration: none;
   font-family: var(--f-body);
+  letter-spacing: 0.02em;
 }
 .terms__back:hover { text-decoration: underline; }
 
 .terms h1 {
   font-family: var(--f-display);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text);
   margin-bottom: 10px;
+  letter-spacing: -0.02em;
 }
 .terms .muted {
   color: var(--muted);
   line-height: 1.65;
+  font-weight: 500;
 }
 
 /* Sections */
 .termsSection {
-  margin-top: 18px;
+  margin-top: 16px;
   padding: 24px 28px;
   border-radius: var(--r);
   border: 1px solid var(--border);
@@ -43,16 +46,18 @@
 }
 .termsSection h2 {
   font-family: var(--f-display);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   color: var(--text);
-  margin: 0 0 14px;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
 }
 .termsSection p {
   color: var(--muted);
   line-height: 1.65;
-  font-size: 15px;
-  margin-bottom: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 .termsSection p:last-child { margin-bottom: 0; }
 .termsSection ul {
@@ -60,31 +65,33 @@
   padding-left: 20px;
   color: var(--muted);
   line-height: 1.65;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .termsSection li { margin: 8px 0; }
 .termsSection strong { color: var(--text); font-weight: 700; }
-.termsSection a { color: var(--amber); font-weight: 600; }
+.termsSection a { color: var(--pink); font-weight: 700; }
 .termsSection a:hover { text-decoration: underline; }
 
-/* Terms card (for A2P page grid) */
+/* Terms card */
 .termsCard {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
   box-shadow: var(--sh-sm);
   padding: 28px 32px;
-  margin: 20px 0;
+  margin: 16px 0;
 }
 .termsCard__title {
   font-family: var(--f-display);
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   color: var(--text);
-  margin: 0 0 18px;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
 }
 
-/* Grid inside terms card */
+/* Grid */
 .termsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,21 +104,22 @@
   background: var(--bg-alt);
 }
 .termsGrid__k {
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 800;
+  font-size: 11px;
   color: var(--text);
   margin-bottom: 6px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.10em;
   font-family: var(--f-body);
 }
 .termsGrid__v {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--muted);
   line-height: 1.55;
+  font-weight: 500;
 }
 
-/* Contact rows inside terms */
+/* Contact rows */
 .termsContact {
   margin-top: 16px;
   display: grid;
@@ -126,29 +134,27 @@
   border-radius: var(--r);
   border: 1px solid var(--border);
   background: var(--bg-alt);
-  font-size: 14px;
+  font-size: 13px;
 }
 .termsContact__k {
-  font-weight: 700;
+  font-weight: 800;
   color: var(--muted);
   flex-shrink: 0;
-  font-size: 13px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.10em;
   font-family: var(--f-body);
 }
 .termsContact__v {
   color: var(--text);
-  font-weight: 500;
+  font-weight: 600;
   text-align: right;
 }
-.termsContact__v a { color: var(--amber); font-weight: 600; }
+.termsContact__v a { color: var(--pink); font-weight: 700; }
 .termsContact__v a:hover { text-decoration: underline; }
 
-/* Bottom back-link row */
-.terms__bottom {
-  margin-top: 32px;
-}
+/* Bottom */
+.terms__bottom { margin-top: 32px; }
 
 @media (max-width: 640px) {
   .termsCard { padding: 20px; }

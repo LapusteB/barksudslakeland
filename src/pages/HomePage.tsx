@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../ui/Footer";
 import Navbar from "../ui/Navbar";
+import SoapBubbles from "../ui/SoapBubbles";
 import "../styles/home.css";
 
 const phone   = "863-210-5647";
@@ -41,12 +42,13 @@ export default function HomePage() {
       <main>
         {/* ── HERO ── */}
         <section className="hero" aria-label="Hero" id="book">
+          <SoapBubbles />
           <div className="container hero__inner">
 
             <div className="hero__copy">
               <span className="eyebrow">Professional Dog Grooming · Lakeland, FL</span>
               <h1 className="hero__title">
-                Your pup deserves to look <em>their best.</em>
+                The modern dog is always <em>by your side.</em>
               </h1>
               <p className="hero__subtitle">
                 A relaxing, safe, and clean grooming experience for every breed and
@@ -164,7 +166,7 @@ export default function HomePage() {
 
             <div className="services__grid">
               <div className="service">
-                <div className="service__icon service__icon--amber" aria-hidden="true">🛁</div>
+                <div className="service__icon service__icon--pink" aria-hidden="true">🛁</div>
                 <div className="service__header">
                   <h3 className="service__title">Bath &amp; Brush</h3>
                   <span className="pill">Popular</span>
@@ -181,7 +183,7 @@ export default function HomePage() {
               </div>
 
               <div className="service">
-                <div className="service__icon service__icon--sage" aria-hidden="true">✂️</div>
+                <div className="service__icon service__icon--green" aria-hidden="true">✂️</div>
                 <div className="service__header">
                   <h3 className="service__title">Full Groom</h3>
                   <span className="pill pill--green">Signature</span>
@@ -364,6 +366,7 @@ export default function HomePage() {
 
         {/* ── CONTACT CTA ── */}
         <section className="ctaSection" id="contact" aria-label="Book an appointment">
+          <SoapBubbles />
           <div className="container ctaSection__inner">
             <div>
               <h2 className="ctaSection__title">Ready to book an appointment?</h2>
@@ -373,10 +376,10 @@ export default function HomePage() {
               </p>
             </div>
             <div className="ctaSection__actions">
-              <a className="btn btn--primary" href={`tel:${phone}`}>
+              <a className="btn btn--white" href={`tel:${phone}`}>
                 Call {phone}
               </a>
-              <a className="btn btn--outline" href={`mailto:${email}`}>
+              <a className="btn btn--outline" href={`mailto:${email}`} style={{ color: "#fff", borderColor: "rgba(255,255,255,0.45)" }}>
                 Email Us
               </a>
             </div>
