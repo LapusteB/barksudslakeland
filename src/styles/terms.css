@@ -1,83 +1,159 @@
-.terms{
-  padding: 44px 0 64px;
+/* ============================================================
+   Terms / Privacy pages — styling only, content is A2P-approved
+   ============================================================ */
+.terms {
+  padding: 56px 0 80px;
 }
-.terms__top{
-  margin-bottom: 14px;
+.terms__top {
+  margin-bottom: 32px;
 }
-.terms__back{
-  display:inline-flex;
+.terms__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--amber);
+  margin-bottom: 20px;
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--f-body);
+}
+.terms__back:hover { text-decoration: underline; }
+
+.terms h1 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  color: var(--text);
   margin-bottom: 10px;
-  color: rgba(11,18,32,0.72);
-  font-weight: 800;
+}
+.terms .muted {
+  color: var(--muted);
+  line-height: 1.65;
 }
 
-.termsCard{
-  border-radius: var(--radius);
-  border: 1px solid rgba(11,18,32,0.10);
-  background: rgba(255,255,255,0.86);
-  box-shadow: var(--shadow);
-  padding: 18px;
-  margin: 18px 0;
+/* Sections */
+.termsSection {
+  margin-top: 18px;
+  padding: 24px 28px;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: var(--sh-xs);
 }
-.termsCard__title{
-  margin: 0 0 12px;
+.termsSection h2 {
+  font-family: var(--f-display);
   font-size: 20px;
-  font-weight: 950;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 14px;
+}
+.termsSection p {
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.termsSection p:last-child { margin-bottom: 0; }
+.termsSection ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 15px;
+}
+.termsSection li { margin: 8px 0; }
+.termsSection strong { color: var(--text); font-weight: 700; }
+.termsSection a { color: var(--amber); font-weight: 600; }
+.termsSection a:hover { text-decoration: underline; }
+
+/* Terms card (for A2P page grid) */
+.termsCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-sm);
+  padding: 28px 32px;
+  margin: 20px 0;
+}
+.termsCard__title {
+  font-family: var(--f-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 18px;
 }
 
-.termsGrid{
-  display:grid;
+/* Grid inside terms card */
+.termsGrid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-.termsGrid__item{
-  padding: 12px 12px;
-  border-radius: 16px;
-  border: 1px solid rgba(11,18,32,0.10);
-  background:
-    linear-gradient(135deg, rgba(31,107,255,0.06), rgba(255,62,166,0.05));
+.termsGrid__item {
+  padding: 16px;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
 }
-.termsGrid__k{ font-weight: 950; margin-bottom: 6px; }
-.termsGrid__v{ color: var(--muted); line-height: 1.5; }
+.termsGrid__k {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--text);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-family: var(--f-body);
+}
+.termsGrid__v {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.55;
+}
 
-.termsSection{
-  margin-top: 18px;
-  padding: 16px 18px;
-  border-radius: var(--radius);
-  border: 1px solid rgba(11,18,32,0.08);
-  background: rgba(255,255,255,0.80);
+/* Contact rows inside terms */
+.termsContact {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
 }
-.termsSection ul{
-  margin: 10px 0 0;
-  padding-left: 18px;
-  color: rgba(11,18,32,0.82);
-  line-height: 1.6;
-}
-.termsSection li{ margin: 8px 0; }
-
-.termsContact{
-  margin-top: 10px;
-  display:grid;
-  gap: 10px;
-}
-.termsContact__row{
-  display:flex;
-  justify-content:space-between;
+.termsContact__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 14px;
-  padding: 12px 14px;
-  border-radius: 16px;
-  border: 1px solid rgba(11,18,32,0.10);
-  background: rgba(255,255,255,0.84);
+  padding: 13px 16px;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+  font-size: 14px;
 }
-.termsContact__k{ font-weight: 900; color: rgba(11,18,32,0.72); }
+.termsContact__k {
+  font-weight: 700;
+  color: var(--muted);
+  flex-shrink: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: var(--f-body);
+}
+.termsContact__v {
+  color: var(--text);
+  font-weight: 500;
+  text-align: right;
+}
+.termsContact__v a { color: var(--amber); font-weight: 600; }
+.termsContact__v a:hover { text-decoration: underline; }
 
-.terms__bottom{
-  margin-top: 18px;
-  display:flex;
-  justify-content:flex-start;
+/* Bottom back-link row */
+.terms__bottom {
+  margin-top: 32px;
 }
 
-@media (max-width: 920px){
-  .termsGrid{ grid-template-columns: 1fr; }
+@media (max-width: 640px) {
+  .termsCard { padding: 20px; }
+  .termsSection { padding: 18px 20px; }
+  .termsGrid { grid-template-columns: 1fr; }
+  .termsContact__row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .termsContact__v { text-align: left; }
 }
-
