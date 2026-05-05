@@ -55,9 +55,9 @@ export default function HomePage() {
                 temperament—gentle care, polished results, and happy tails guaranteed.
               </p>
               <div className="hero__actions">
-                <a className="btn btn--primary" href="#contact">
+                <Link className="btn btn--primary" to="/book-appointment">
                   Book an Appointment
-                </a>
+                </Link>
                 <a className="btn btn--outline" href={`tel:${phone}`}>
                   Call {phone}
                 </a>
@@ -131,6 +131,7 @@ export default function HomePage() {
                   feeling their absolute best.
                 </p>
                 <a className="btn btn--outline" href="#services">See our services →</a>
+
               </div>
 
               <div className="features">

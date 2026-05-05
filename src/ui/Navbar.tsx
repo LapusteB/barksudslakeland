@@ -54,9 +54,9 @@ export default function Navbar() {
           <a href="/#services"  onClick={() => setOpen(false)}>Services</a>
           <a href="/#locations" onClick={() => setOpen(false)}>Locations</a>
           <a href="/#faqs"      onClick={() => setOpen(false)}>FAQs</a>
-          <a href="/#book" className="nav__bookBtn" onClick={() => setOpen(false)}>
+          <Link to="/book-appointment" className="nav__bookBtn" onClick={() => setOpen(false)}>
             Book Appointment
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
