@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist/server && node scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -17,11 +17,8 @@
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.8",
     "@vitejs/plugin-react": "^4.3.4",
+    "react-dom": "^19.1.1",
     "typescript": "^5.9.2",
-    "vite": "^6.2.6",
-    "vite-plugin-prerender": "^1.0.8"
-  },
-  "overrides": {
-    "puppeteer": "^24.15.0"
+    "vite": "^6.2.6"
   }
 }
