@@ -119,6 +119,22 @@ export default function BookAppointmentPage() {
     <div className="page">
       <Navbar />
       <main>
+        <noscript>
+          <p>Book an appointment with BarkSuds Lakeland</p>
+          <p>
+            By checking this box, I consent to receive SMS messages from BarkSuds
+            Lakeland related to my dog grooming appointments, including
+            confirmations, reminders, rescheduling notifications, and customer
+            service responses. Message frequency may vary. Message and data rates
+            may apply. Reply STOP to opt out or HELP for help. Consent is not a
+            condition of purchase.
+          </p>
+          <p>
+            <a href="/privacy-policy">Privacy Policy</a>
+            {" · "}
+            <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+          </p>
+        </noscript>
         <section className="book">
           <div className="container">
 

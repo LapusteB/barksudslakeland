@@ -18,6 +18,10 @@
     "@types/react-dom": "^19.1.8",
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.9.2",
-    "vite": "^6.2.6"
+    "vite": "^6.2.6",
+    "vite-plugin-prerender": "^1.0.8"
+  },
+  "overrides": {
+    "puppeteer": "^24.15.0"
   }
 }

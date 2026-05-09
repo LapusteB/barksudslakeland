@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/((?!book-appointment|privacy-policy|terms-and-conditions|a2p|assets).*)",
+      "destination": "/"
+    }
   ]
 }
