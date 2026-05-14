@@ -143,7 +143,7 @@ export default function BookAppointmentPage() {
               <h1>Book an Appointment</h1>
               <p className="book__intro">
                 Fill out the form below and our team will reach out to confirm
-                your pup's grooming appointment. Appointments required—one pup per booking.
+                your pup's grooming appointment.
               </p>
             </div>
 
@@ -354,13 +354,6 @@ export default function BookAppointmentPage() {
                   </div>
                 </div>
 
-                <div className="book__asideCard book__asideNote">
-                  <strong>One pup per booking</strong>
-                  <p>
-                    Please submit a separate form for each pet. Need a last-minute
-                    spot? Give us a call and we'll do our best to fit you in.
-                  </p>
-                </div>
 
                 <div className="book__asideCard book__asideNote">
                   <strong>What to expect</strong>
