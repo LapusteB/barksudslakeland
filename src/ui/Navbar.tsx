@@ -23,14 +23,14 @@ export default function Navbar() {
   return (
     <header className="nav" id="top">
       <div className="container nav__inner">
-        <Link className="nav__brand" to="/" onClick={() => setOpen(false)}>
+        <a className="nav__brand" href="/" onClick={() => setOpen(false)}>
           <span className="nav__logoMark">
             <PawIcon />
           </span>
           <span className="nav__brandText">
             BarkSuds <span className="nav__city">Lakeland</span>
           </span>
-        </Link>
+        </a>
 
         <button
           className={`nav__burger${open ? " nav__burger--open" : ""}`}
