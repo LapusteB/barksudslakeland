@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const PawIcon = () => (
@@ -54,9 +53,9 @@ export default function Navbar() {
           <a href="/#services"  onClick={() => setOpen(false)}>Services</a>
           <a href="/#locations" onClick={() => setOpen(false)}>Locations</a>
           <a href="/#faqs"      onClick={() => setOpen(false)}>FAQs</a>
-          <Link to="/book-appointment" className="nav__bookBtn" onClick={() => setOpen(false)}>
-            Book Appointment
-          </Link>
+          <a href="tel:863-210-5647" className="nav__bookBtn" onClick={() => setOpen(false)}>
+            Call to Book
+          </a>
         </nav>
       </div>
     </header>
